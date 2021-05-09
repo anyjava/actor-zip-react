@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Button } from 'antd-mobile';
 import 'antd-mobile/dist/antd-mobile.css';
-import { TabBar, ListView } from 'antd-mobile';
+import { TabBar} from 'antd-mobile';
 
 function App() {
   return (
