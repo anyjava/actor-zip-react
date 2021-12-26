@@ -1,10 +1,19 @@
+import React, { useState } from 'react';
+
 import logo from './logo.svg';
 import './App.css';
 import { Button } from 'antd-mobile';
 import 'antd-mobile/dist/antd-mobile.css';
 import { TabBar} from 'antd-mobile';
 
+interface AppState {
+  selectedTab: string
+}
+
 function App() {
+  const [ selectedTab, setSelectedTab ] = useState<AppState>();
+  const onClickTab = (text: string) => setSelectedTab({selectedTab: text});
+
   return (
     <div className="App">
       <header className="App-header">
@@ -49,11 +58,7 @@ function App() {
             }
             selected={true}
             badge={1}
-            onPress={() => {
-              this.setState({
-                selectedTab: 'blueTab',
-              });
-            }}
+            onPress={() => onClickTab('blueTab')}
             data-seed="logId"
           >
           </TabBar.Item>
