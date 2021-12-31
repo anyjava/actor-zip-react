@@ -6,7 +6,7 @@ export default class Feed {
 		this.title = title;
 	}
 
-	getTitle() {
+	getTitle(): string {
 		return this.title;
 	}
 }

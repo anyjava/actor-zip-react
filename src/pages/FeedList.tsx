@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 import { List, NavBar } from 'antd-mobile'
 
@@ -8,7 +8,7 @@ import Feed from '../model/Feed';
 
 const feedRepository: FeedRepository = new FeedRepositoryMock();
 
-function FeedList() {
+function FeedList(): ReactElement {
   return (
     <div className="feedList">
 			<NavBar backArrow={false}  back='한예리'>피드 리스트</NavBar>
