@@ -12,9 +12,9 @@ function FeedList(): ReactElement {
   return (
     <div className="feedList">
 			<NavBar backArrow={false}  back='한예리'>피드 리스트</NavBar>
-      <List>
+      <List key={1}>
         {feedRepository.findAllBy().map((feed: Feed) => {
-          return <List.Item clickable title={feed.getTitle()} prefix='dfsdfas'/>
+          return <List.Item key={feed.getId()} clickable title={feed.getTitle()} prefix='dfsdfas'/>
         })}
       </List>
     </div>

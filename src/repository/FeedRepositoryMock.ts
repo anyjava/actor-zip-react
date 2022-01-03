@@ -5,10 +5,10 @@ export default class FeedRepositoryMock implements FeedRepository {
 	// eslint-disable-next-line class-methods-use-this
 	findAllBy(): Feed[] {
 		return [
-			new Feed('title1'),
-			new Feed('title2'),
-			new Feed('title3'),
-			new Feed('title4'),
+			new Feed(1, 'title1'),
+			new Feed(2, 'title2'),
+			new Feed(3, 'title3'),
+			new Feed(4, 'title4'),
 		];
 	}
 }
