@@ -4,9 +4,12 @@ export default class Feed {
 
 	private title: string
 
-	constructor(id: number, title: string) {
+	private url: string
+
+	constructor(id: number, title: string, url: string) {
 		this.id = id;
 		this.title = title;
+		this.url = url;
 	}
 
 	getId(): number {
@@ -15,5 +18,9 @@ export default class Feed {
 
 	getTitle(): string {
 		return this.title;
+	}
+
+	getUrl(): string {
+		return this.url;
 	}
 }
