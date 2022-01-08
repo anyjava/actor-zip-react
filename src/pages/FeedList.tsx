@@ -17,7 +17,7 @@ function FeedList(): ReactElement {
       setFeeds(result);
     }
     get();
-  })
+  }, [])
 
   return (
     <div className="feedList">
